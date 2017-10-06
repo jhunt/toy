@@ -1,0 +1,14 @@
+---
+language: go
+sudo: false
+go:
+  - 1.8
+
+script:
+  - go build .
+  - ./toy
+
+notifications:
+  email:
+    on_success: james@jameshunt.us
+    on_failure: james@jameshunt.us
