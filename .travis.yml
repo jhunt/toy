@@ -8,6 +8,17 @@ script:
   - go build .
   - ./toy
 
+deploy:
+  provider: releases
+  api_key:
+    secure: MYNziuEWzVPq+UJExkYS9MowRXuqRUPMhdd4iHg+Tf5hedtuXudyXVFmVlMuF3zfADPTlGFJXi+qqQBX5DmIQ7ylRgI0bkMqcAUhj+sQhcdAcnBmaDE/UT+0j3FPnI636geHA5t15sU/U67/M7ZLV0d8nXsm2fao81l0bUxrfsll2D5fsm5sLBfyKZzg3BY4E/26XtD44Qo8NcbKHINzIr927cJbBYpQgUSkptEfJjB5t6FOZ9cogkwcobWZ6xTGrrtHSgeGbS5fUpk5OOSY5j8m4sbH4BzR2b5sVWqsRXchOU1fNQA2Zs6zIFyecr8F7yRQDzNlccyrMjfE+cDl/BDawzYR73nIpBzZrNyopQMowfZk/5p48QrvtV1YSwZ5dHD1VjEaXuyuA0q5w/QmszQ1JLqc6pO0v34+R3/xqWGJGXfJ2HUGWHTLq8tPtiDJpZ6cc1ouNxjngcDw394QJ7Vy7PlbyDa6XtsF6tYc40UG6/T0eDz3eRiPdSSv9BveU1XTZ4KKefWYfbGAW+dMi4GAkdcaoD0fOcWIVzK8q1U/G5wU9iONm3VsD+F/RCAC+DG7YXIMgjYY8XyPEYyiwSQbdPriHYK59tGNEbBsRbLss4MNHhcn6or14LlW/zQxOS/GzXXF/YKAqmIbO3OXyOfDMwQjHVTT2IdzDwh7c1w=
+  file:
+    - toy
+  name: A Test Github Release
+  body: |
+    This is a test release, with release notes provided directly
+    by the .travis.yml file.
+
 notifications:
   email:
     on_success: james@jameshunt.us
