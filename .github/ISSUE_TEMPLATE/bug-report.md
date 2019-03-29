@@ -1,7 +1,7 @@
 ---
 name: Bug Report
 about: Found a bug in SHIELD?  Help us squash it!
-title: "[BUG]"
+title: "[BUG] ..."
 labels: triage
 assignees: ''
 

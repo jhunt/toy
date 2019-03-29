@@ -1,7 +1,7 @@
 ---
 name: Feature Request
-about: Want to make SHIELD better?  Request a feature!
-title: "[NEW]"
+about: Got an idea for making SHIELD better?  We want to hear it!
+title: "[NEW] ..."
 labels: eval
 assignees: ''
 
